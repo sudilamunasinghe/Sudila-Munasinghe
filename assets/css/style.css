@@ -1062,6 +1062,9 @@ section {
   background: #0563bb;
   color: #fff;
 }
+.email a{
+  color: #728394;
+}
 
 .contact .php-email-form {
   width: 100%;
