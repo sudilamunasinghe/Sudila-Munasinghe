@@ -1,10 +1,11 @@
 body {
   font-family: "Open Sans", sans-serif;
-  color: #272829;
+  color: #f7f7f7;
+  background-color: #011426;
 }
 
 a {
-  color: #0563bb;
+  color: #f7f7f7;
   text-decoration: none;
 }
 
@@ -66,7 +67,7 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: #071a2c;
 }
 
 #preloader:before {
@@ -74,9 +75,9 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #0563bb;
-  border-top-color: #fff;
-  border-bottom-color: #fff;
+  border: 6px solid #0174e0;
+  border-top-color: #071a2c;
+  border-bottom-color: #071a2c;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -168,13 +169,14 @@ h6 {
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: #45505b;
+  color: #a0a0a0;
   padding: 10px 18px;
   margin-bottom: 8px;
   transition: 0.3s;
   font-size: 15px;
   border-radius: 50px;
-  background: #f2f3f5;
+  background: #1f2430;
+  box-shadow: 0px 0px 4px 0px rgb(110, 110, 110);
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -252,7 +254,10 @@ h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #45505b;
+  color: #757575;
+}
+#navbar span{
+  color: white;
 }
 
 .mobile-nav-active {
@@ -261,6 +266,8 @@ h6 {
 
 .mobile-nav-active #header {
   left: 0;
+  background-color: #011426;
+  border: none;
 }
 
 .mobile-nav-active .mobile-nav-toggle {
@@ -287,7 +294,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
+  background: #000000c4;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -300,11 +307,11 @@ h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #45505b;
+  color: #a3a3a3;
 }
 
 #hero p {
-  color: #45505b;
+  color: #7e7e7e;
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
@@ -322,7 +329,7 @@ h6 {
 #hero .social-links a {
   font-size: 24px;
   display: inline-block;
-  color: #45505b;
+  color: #b4b4b4;
   line-height: 1;
   margin-right: 20px;
   transition: 0.3s;
@@ -369,7 +376,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #45505b;
+  color: #a0b2cc;
 }
 
 .section-title h2::before {
@@ -445,7 +452,7 @@ section {
   width: 100%;
   position: relative;
   text-align: center;
-  background: #fff;
+  background: #011426;
 }
 
 .facts .count-box i {
@@ -468,7 +475,7 @@ section {
   font-size: 36px;
   display: block;
   font-weight: 600;
-  color: #011426;
+  color: #b8c7d4;
 }
 
 .facts .count-box p {
@@ -495,7 +502,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #45505b;
+  color: rgb(175, 175, 175);
 }
 
 .skills .progress .skill .val {
@@ -522,7 +529,7 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #45505b;
+  color: #c4c4c4;
 }
 
 .resume .resume-item {
@@ -544,7 +551,7 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #f7f8f9;
+  background: #0c2238;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -571,7 +578,7 @@ section {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #fff;
+  background: #071a2c;
   border: 2px solid #0563bb;
 }
 
@@ -587,7 +594,7 @@ section {
   margin: 0 auto 25px auto;
   list-style: none;
   text-align: center;
-  background: #fff;
+  background: #011426;
   border-radius: 50px;
   padding: 2px 15px;
 }
@@ -600,7 +607,7 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #272829;
+  color: #b8b8b8;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
@@ -649,6 +656,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #071a2caf;
 }
 
 .portfolio .portfolio-wrap .portfolio-info::before {
@@ -681,12 +689,12 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #45505b;
+  color: #d8d8d8;
   font-weight: 600;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: #45505b;
+  color: #c5c5c5;
   font-size: 14px;
   text-transform: uppercase;
   padding: 0;
@@ -699,7 +707,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #45505b;
+  color: #c5c5c5;
   margin: 0 2px;
   font-size: 28px;
   display: inline-block;
@@ -804,7 +812,7 @@ section {
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
+  background: #00223fa4;
   box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
   width: 100%;
 }
@@ -834,7 +842,7 @@ section {
 
 .services .icon-box .icon svg path {
   transition: 0.5s;
-  fill: #f5f5f5;
+  fill: #011426;
 }
 
 .services .icon-box h4 {
@@ -1019,7 +1027,8 @@ section {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  background: #fff;
+  background: #011426;
+  border-radius: 10px;
 }
 
 .contact .info i {
@@ -1028,7 +1037,7 @@ section {
   float: left;
   width: 44px;
   height: 44px;
-  background: #eef7ff;
+  background: #000d1a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1041,14 +1050,14 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #45505b;
+  color: #c4c4c4;
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #728394;
+  color: #808992;
 }
 
 .contact .info .email,
@@ -1068,7 +1077,7 @@ section {
 
 .contact .php-email-form {
   width: 100%;
-  background: #fff;
+  background: #011426;
 }
 
 .contact .php-email-form .form-group {
@@ -1126,12 +1135,20 @@ section {
 
 .contact .php-email-form input {
   height: 44px;
+  background-color: #071a2c;
+  color: rgb(180, 180, 180);
 }
 
 .contact .php-email-form textarea {
   padding: 10px 12px;
+  background-color: #071a2c;
+  color: rgb(180, 180, 180);
+  border: none;
 }
-
+.form-control{
+  background-color: #071a2c;
+  border: none;
+}
 .contact .php-email-form button[type=submit] {
   background: #0563bb;
   border: 0;
@@ -1143,6 +1160,11 @@ section {
 
 .contact .php-email-form button[type=submit]:hover {
   background: #0678e3;
+}
+.form-group input{
+  background-color: #071a2c;
+  color:white;
+
 }
 
 @-webkit-keyframes animate-loading {
@@ -1169,8 +1191,8 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #f7f8f9;
-  color: #45505b;
+  background: #00101f;
+  color: #acb0b4;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
