@@ -281,20 +281,26 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/sudila-bg.png") top right no-repeat;
+  background: url("../img/background.jpg") top right no-repeat;
   background-size: cover;
   position: relative;
 }
 
-@media (min-width: 992px) {
-  #hero {
-    padding-left: 160px;
+
+.abcd{
+  position: absolute;
+  bottom: 8%;
+  right: 5%;
+}
+@media screen and (max-width:995px){
+  .abcd{
+    right: 0;
+    left: 0;
   }
 }
-
 #hero:before {
   content: "";
-  background: #000000e1;
+  background: #011426e1;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -302,28 +308,71 @@ h6 {
   right: 0;
 }
 
+#hero img{
+  width: 25vw;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 2;
+  margin-bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.profile-ring{
+  width: 27vw;
+  height:27vw;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  margin-bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: blur(10px);
+  box-shadow: 0px 0px 90px 12px #dc2743;
+}
+@media screen and (max-width:995px){
+  #hero img{
+    width: 50vw;
+  }
+  .profile-ring{
+    width: 53vw;
+    height: 53vw;
+  }
+}
 #hero h1 {
   margin: 0;
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #a3a3a3;
+  color: #eeeeee;
+  text-align:center;
 }
 
 #hero p {
-  color: #7e7e7e;
+  color: #c4c4c4;
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 
 #hero p span {
-  color: #0563bb;
+  color: #e7035a;
   letter-spacing: 1px;
 }
 
 #hero .social-links {
   margin-top: 30px;
+  position: relative;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #hero .social-links a {
