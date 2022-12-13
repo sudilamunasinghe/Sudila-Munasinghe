@@ -300,7 +300,7 @@ h6 {
 }
 #hero:before {
   content: "";
-  background: #011426e1;
+  background: #000d1ae1;
   position: absolute;
   bottom: 0;
   top: 0;
