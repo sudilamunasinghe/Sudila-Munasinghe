@@ -152,6 +152,7 @@ h6 {
 .nav-menu {
   padding: 0;
   display: block;
+  
 }
 
 .nav-menu * {
@@ -288,14 +289,25 @@ h6 {
 
 
 .abcd{
+  position: relative;
+}
+.hello{
+  width: max-content;
+  margin: 0;
   position: absolute;
-  bottom: 8%;
-  right: 5%;
+  top: 20vh;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 @media screen and (max-width:995px){
   .abcd{
     right: 0;
     left: 0;
+    bottom: 10%;
+  }
+  #hero img , .profile-ring{
+    bottom: 40%;
   }
 }
 #hero:before {
