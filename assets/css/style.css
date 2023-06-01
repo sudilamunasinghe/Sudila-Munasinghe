@@ -1001,6 +1001,28 @@ section {
 .services .iconbox-teal:hover .icon path {
   fill: #11dbcf;
 }
+.services-hover{
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-color: #011426;
+  border-radius: 50%;
+  transition: ease-in-out 0.3s;
+}
+.services-hover i{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.icon-box:hover .services-hover{
+  background-color: rgb(3, 48, 250);
+  transition: all ease-in-out 0.3s;
+
+}
+.icon-box{
+  transition: ease-in-out 0.3s;
+
+}
 
 /*--------------------------------------------------------------
 # Testimonials
