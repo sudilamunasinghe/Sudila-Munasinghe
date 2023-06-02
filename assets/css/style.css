@@ -1025,6 +1025,42 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Technologies
+--------------------------------------------------------------*/
+.swiper {
+  width: 100%;
+  color: black;
+  margin-top: 50px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.technologies-slider img{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.swiper-pagination{
+  position: absolute;
+  top: 50px;
+  margin-top: 40px;
+}
+
+
+/*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
 .gallery .gallery-item {
